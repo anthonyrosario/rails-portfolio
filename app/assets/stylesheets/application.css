@@ -1,14 +1,11 @@
-* {
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-}
-
 /*$dark: #424652;
 $light: #9a9da4;
 $highlight #8bc6db;
 $border: #E9E9E9*/
 
-
+body {
+  font-family: 'Raleway', sans-serif;
+}
 #main_navigation {
   width: 100%;
   background-color: #e2e0e0;
