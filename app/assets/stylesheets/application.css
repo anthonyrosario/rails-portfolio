@@ -1,15 +1,81 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*$dark: #424652;
+$light: #9a9da4;
+$highlight #8bc6db;
+$border: #E9E9E9*/
+
+
+#main_navigation {
+  width: 100%;
+  background-color: #e2e0e0;
+}
+
+#main_navigation p, #main_navigation h1  {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.description {
+  padding-bottom: 1px;
+  font-size: 1em;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+
+.home {
+  padding: 0px;
+}
+#main_navigation h1 {
+  font-weight: 700;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  letter-spacing: .2em;
+}
+
+nav {
+  text-align: center;
+  padding-top: 15px;
+}
+
+nav a {
+  padding-left:80px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+
+
+.fluid-container div  {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.fluid-container div p {
+  font-size: .6em;
+  color: white;
+  margin-top: 2px;
+}
+i {
+  color: white;
+}
+
+i:hover {
+  color:gray;
+}
+
+.copyright {
+  color: white;
+}
+
+/*@import "normalize";*/
