@@ -3,7 +3,6 @@
 <head>
   <title>Anthony Rosario - Web/Mobile Developer</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -13,7 +12,7 @@
 <body>
   <header id="main_navigation">
     <nav>
-      <a  class="home" href="#">Home</a>
+      <%= link_to "Home", root_path %>
       <%= link_to "Blog", posts_path %>
       <a href="#">Projects</a>
       <a href="#">About</a>
@@ -37,8 +36,5 @@
 
     </div>
   </footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
