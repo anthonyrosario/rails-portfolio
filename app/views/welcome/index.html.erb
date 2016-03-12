@@ -7,23 +7,22 @@
   </div>
 
   <div class="col-2 homepage_content">
-    <h2><a href="#">Stuff I've Written</a></h2>
+    <h2><%= link_to "Blog", posts_path %></h2>
     <hr>
-    
-    <% @post.each do |post| %>
+
+    <% @posts.each do |post| %>
     <h3><a href="#"><%= link_to post.title, post %></a></h3>
     <P class="date"><%= post.created_at.strftime("%A, %b, %d")%></P>
     <% end %>
   </div>
 
   <div class="col-3 homepage_content">
-    <h2><a href="#">Stuff I've Built</a></h2>
+    <h2><%= link_to "Projects", projects_path %></h2>
     <hr>
-    <h3><a href="#">Unicasts</a></h3>
-    <P class="date">Friday April 10th</P>
-    <h3><a href="#">Community</a></h3>
-    <P class="date">Friday April 10th</P>
-    <h3><a href="#">12 in 12 challegnge</a></h3>
-    <P class="date">Friday April 10th</P>
+
+    <% @projects.each do |project| %>
+    <h3><a href="#"><%= link_to project.title, project %></a></h3>
+    <P class="date"><%= project.created_at.strftime("%A, %b, %d")%></P>
+    <% end %>
   </div>
 </div><!-- end of main content wrapper -->
