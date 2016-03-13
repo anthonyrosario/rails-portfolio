@@ -9,8 +9,11 @@
       <%= markdown @post.content %>
     </div>
 
-    <%= link_to "Edit", edit_post_path(@post) %>
-    <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?"} %>
-
+    <% if user_signed_in? %>
+      <div class="admin_links">
+        <%= link_to "Edit", edit_post_path(@post) %>
+        <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?"} %>
+      </div>
+    <% end %>
     <hr>
 </div>

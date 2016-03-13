@@ -17,7 +17,12 @@
       <%= link_to "Projects", projects_path %>
       <a href="#">About</a>
       <%= link_to "Contact", new_contact_path %>
+
+      <% if user_signed_in? %>
+        <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+      <% end %>
     </nav>
+
     <h1>Anthony Rosario</h1>
 
     <div class="description">
@@ -30,7 +35,7 @@
   <% elsif alert %>
     <p class="alert"><%= alert %></p>
   <% end %>
-  
+
 <%= yield %>
 
   <footer>
