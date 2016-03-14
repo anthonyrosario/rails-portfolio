@@ -52,3 +52,76 @@
     text-decoration: none;
   }
 }
+
+
+// ============================
+
+
+#main_navigation {
+  width: 100%;
+  background-color: #e2e0e0;
+}
+
+#main_navigation p, #main_navigation h1  {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.description {
+  padding-bottom: 1px;
+  font-size: 1em;
+}
+
+footer {
+
+  background-color: black;
+}
+
+.home {
+  padding: 0px;
+}
+#main_navigation h1 {
+  font-weight: 700;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  letter-spacing: .2em;
+}
+
+nav {
+  text-align: center;
+  padding-top: 15px;
+}
+
+nav a {
+  padding-left:80px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+
+
+.fluid-container div  {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.fluid-container div p {
+  font-size: .6em;
+  color: white;
+  margin-top: 2px;
+}
+i {
+  color: white;
+}
+
+i:hover {
+  color:gray;
+}
+
+.copyright {
+  color: white;
+  margin: 0;
+}
