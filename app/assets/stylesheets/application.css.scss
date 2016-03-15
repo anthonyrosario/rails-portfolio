@@ -29,16 +29,6 @@ body {
   padding: 4rem 0;
 }
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
 .hidden {
   display: none;
 }
@@ -79,7 +69,7 @@ p, li {
 }
 
 p, ul, ol {
-  margin: 0 0 1.6em 0;
+  margin: 0 0 0 0;
 }
 
 hr {
@@ -92,28 +82,31 @@ hr {
 }
 
 #main_navigation {
-  padding: 2.5em 5%;
+  background-color: #e8e8ea;
+  padding: 0 5% 0 5%;
   border-bottom: 1px solid $border;
+  text-align: center;
   .name {
     font-weight: 700;
-    font-size: .8em;
+    font-size: 2em;
     text-transform: uppercase;
-    border: 2px solid $border;
     padding: 1rem;
     text-decoration: none;
     color: $dark;
-    float: left;
-    letter-spacing: 4px;
+    letter-spacing: 20px;
   }
 
   nav {
-    float: right;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
+    text-align: center;
     a {
       color: $dark;
       text-decoration: none;
       margin: 1rem;
       font-size: 1rem;
+      &:hover {
+        color: $highlight;
+      }
     }
   }
 }
@@ -128,23 +121,13 @@ hr {
 }
 
 #main_footer {
-  padding: 2.5em 5%;
+  background-color: black;
+  text-align: center;
+  padding: 2.5em 5% .25em 5%;
   border-top: 1px solid $border;
-  .copyright {
-    float: left;
+  p {
+    color: $white;
     font-size: .9em;
-    margin: 0;
-  }
-  nav {
-    float: right;
-    i {
-      color: $dark;
-      margin-left: 1em;
-      padding-top: .2em;
-      &:hover {
-        color: $highlight;
-      }
-    }
   }
 }
 
