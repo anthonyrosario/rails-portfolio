@@ -10,8 +10,14 @@ $border: #E9E9E9;
   box-sizing: border-box;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
+  margin-bottom: 120px;
 }
 
 .wrapper {
@@ -121,6 +127,11 @@ hr {
 }
 
 #main_footer {
+  height: 120px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: black;
   text-align: center;
   padding: 2.5em 5% .25em 5%;
@@ -130,6 +141,7 @@ hr {
     font-size: .9em;
   }
 }
+
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;
@@ -174,5 +186,6 @@ input[type="submit"], .button {
 @import "welcome";
 @import "posts_projects";
 @import "pygments";
+@import "about";
 
 // ============ end of main ==========

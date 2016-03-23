@@ -1,19 +1,28 @@
 <div class="wrapper wrapper_padding clearfix">
   <div class="col-1 about homepage_content">
-    <h2>About</h2>
+    <h2><%= link_to "About", about_index_path %></h2>
     <hr>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, suscipit expedita unde placeat natus quibusdam distinctio ipsam est explicabo nemo.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, corporis, nulla. Cum, aperiam eligendi quae consequuntur quibusdam aliquid eaque nam!</p>
+    <div class="aboutText">
+      <figure>
+        <blockquote cite="http://www.cheatsheet.com/technology/20-most-memorable-quotes-from-steve-jobs.html/?a=viewall">Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.</blockquote>
+        <figcaption>— Steve Jobs</figcaption>
+      </figure>
+    </div>
   </div>
 
   <div class="col-2 homepage_content">
     <h2><%= link_to "Blog", posts_path %></h2>
     <hr>
 
+    <p>
+      Coming Soon!
+    </p>
+
+    <!--
     <% @posts.each do |post| %>
     <h3><a href="#"><%= link_to post.title, post %></a></h3>
     <P class="date"><%= post.created_at.strftime("%A, %b, %d")%></P>
-    <% end %>
+    <% end %> -->
   </div>
 
   <div class="col-3 homepage_content">

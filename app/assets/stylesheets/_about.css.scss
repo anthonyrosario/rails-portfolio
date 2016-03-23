@@ -1,0 +1,54 @@
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.familiar {
+  padding-left: 100px;
+  float: left;
+  width: 50%;
+}
+
+.workedWith {
+  padding-left: 100px;
+  float: left;
+  width: 50%;
+}
+
+.tech {
+  margin-bottom: 0;
+  padding-bottom: .5em;
+  text-align: center;
+}
+
+.clearfix {
+  margin: 0 auto;
+}
+
+.aboutContent {
+
+  h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.35em;
+    font-weight: 400;
+    margin-bottom: .5em;
+  }
+}
+
+.aboutMeDescription {
+  text-align: center;
+  border-bottom: 1px solid $border;
+  padding-bottom: 2em;
+}
+
+.techbox {
+  padding-top: 2em;
+}
