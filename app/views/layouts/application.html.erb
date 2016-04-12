@@ -17,6 +17,7 @@
       <%= link_to "Projects", projects_path %>
       <%= link_to "About", about_index_path %>
       <%= link_to "Contact", new_contact_path %>
+      <%= link_to "Sample Code", sample_index_path %>
 
       <% if user_signed_in? %>
         <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
